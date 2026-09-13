@@ -5,8 +5,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/sudzekai/web-os-api/packages/abstractions"
-	"github.com/sudzekai/web-os-api/packages/types"
+	"github.com/sudzekai-web-os/abstractions"
+	"github.com/sudzekai-web-os/types"
 )
 
 type Executor struct {
