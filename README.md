@@ -5,7 +5,7 @@
 ## Установка
 
 ```bash
-go get github.com/sudzekai-web-os/executor@latest
+go get github.com/sudzekai-web-os/executor
 ```
 
 ## Использование
