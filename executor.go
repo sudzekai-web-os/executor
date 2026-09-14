@@ -51,5 +51,7 @@ func (ex *Executor) executeCommand(cmd *exec.Cmd) (result types.CommandResult) {
 	result.Stdout = stdoutBuf.String()
 	result.Stderr = stderrBuf.String()
 
+	ex.logger.LogDebug("вывод команды:\nstdout: %s\nstderr: %s", result.Stdout, result.Stderr)
+
 	return
 }
