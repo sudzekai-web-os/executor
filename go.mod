@@ -3,6 +3,6 @@ module github.com/sudzekai-web-os/executor
 go 1.26.8
 
 require (
-	github.com/sudzekai-web-os/abstractions v1.0.4 // direct
+	github.com/sudzekai-web-os/abstractions v1.1.1 // direct
 	github.com/sudzekai-web-os/types v1.0.4 // direct
 )
