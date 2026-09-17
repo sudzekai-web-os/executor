@@ -33,6 +33,14 @@ func (ex *Executor) ExecuteInDirectory(directory string, command string, args ..
 	return ex.executeCommand(cmd)
 }
 
+func (ex *Executor) ExecuteWithInput(input, command string, args ...string) types.CommandResult {
+	cmd := exec.Command(command, args...)
+
+	cmd.Stdin = strings.NewReader(input)
+
+	return ex.executeCommand(cmd)
+}
+
 func (ex *Executor) executeCommand(cmd *exec.Cmd) (result types.CommandResult) {
 	var stdoutBuf bytes.Buffer
 	var stderrBuf bytes.Buffer
